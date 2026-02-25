@@ -24,7 +24,7 @@
 
 #### \## Ver online
 
-#### &nbsp;	https://github.com/santiago-elias-bravo
+#### &nbsp;	https://santiago-elias-bravo.github.io/cvtecnico/
 
 #### \## Autor
 
