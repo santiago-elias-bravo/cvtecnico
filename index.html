@@ -2,86 +2,294 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CV Técnico - Bravo Santiago Elías</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Santiago Elías Bravo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>Bravo Santiago Elías</h1>
-        <p class="subtitle">Técnico en Informática |Estudiante| Especialista en Soporte y Publicidad Digital</p>
-    </header>
+    <canvas id="bg-canvas" class="bg-canvas"></canvas>
 
-    <main>
+    <nav class="nav">
+        <a href="#hero" class="nav-logo">SEB</a>
+        <div class="nav-links">
+            <a href="#about" data-es="Sobre mí" data-en="About">Sobre mí</a>
+            <a href="#skills" data-es="Skills" data-en="Skills">Skills</a>
+            <a href="#experience" data-es="Experiencia" data-en="Experience">Experiencia</a>
+            <a href="#education" data-es="Educación" data-en="Education">Educación</a>
+            <a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a>
+        </div>
+        <button class="lang-toggle" id="langToggle">EN</button>
+    </nav>
 
-        <section id="perfil">
-            <h2>Perfil</h2>
-            <p>
-               Técnico en Informática y Estudiante de Licenciatura en Informática. A lo largo de más de cuatro años he
-               ayudado a pequeñas empresas y equipos a optimizar sus sistemas y mejorar su presencia online, con soluciones
-               prácticas que ahorran tiempo y aumentan su impacto, entendiendo las necesidades reales de las personas que lo utilizan.
-               Me encanta seguir aprendiendo, trabajar en equipo y contribuir con mi experiencia en cada nuevo desafío.
-            </p>
+    <div class="container">
+
+        <section id="hero" class="hero">
+            <span class="badge">// perfil profesional</span>
+            <span class="available"><span class="dot"></span><span data-es="Disponible para trabajar" data-en="Open to work">Disponible para trabajar</span></span>
+
+            <h1>Santiago Elías Bravo</h1>
+            <p class="subtitle" data-es="Técnico en Informática | Estudiante | Especialista en Soporte y Publicidad Digital" data-en="Computer Technician | Student | IT Support &amp; Digital Advertising Specialist">Técnico en Informática | Estudiante | Especialista en Soporte y Publicidad Digital</p>
+
+            <div class="contact">
+                <a href="mailto:santiagoeliasbravo@gmail.com"><i class="fa-solid fa-envelope"></i> santiagoeliasbravo@gmail.com</a>
+                <a href="tel:+541136865082"><i class="fa-solid fa-phone"></i> +54 11 3686-5082</a>
+                <a href="https://github.com/santiago-elias-bravo" target="_blank"><i class="fa-brands fa-github"></i> github.com/santiago-elias-bravo</a>
+                <a href="https://www.linkedin.com/in/santiago-elías-bravo-701808351/" target="_blank"><i class="fa-brands fa-linkedin"></i> Santiago Elías Bravo</a>
+                <p><i class="fa-solid fa-location-dot"></i> Marcos Paz, Buenos Aires, Argentina</p>
+            </div>
         </section>
 
-        <section id="tecnologias">
-            <h2>Tecnologías</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>SQL</li>
+        <section id="about">
+            <h2><span class="section-num">01.</span><span data-es="Sobre mí" data-en="About me">Sobre mí</span></h2>
+            <p class="about-text" data-es="Técnico en Informática y estudiante de Licenciatura en Informática. A lo largo de más de cuatro años he ayudado a pequeñas empresas y equipos a automatizar procesos, optimizar sus sistemas y mejorar su presencia online, con soluciones prácticas que ahorran tiempo y aumentan su impacto. Lo que me diferencia no es sólo la capacidad técnica para diagnosticar un servidor o diseñar una aplicación, sino la habilidad para entender las necesidades reales de las personas que las usan, proponer alternativas claras y ejecutarlas de forma eficiente. Me encanta seguir aprendiendo y contribuir con mi experiencia en cada nuevo desafío."
+            data-en="Computer Technician and Computer Science student. For over four years, I have helped small businesses and teams automate processes, optimize their systems, and improve their online presence through practical solutions that save time and increase productivity. What sets me apart is not only my technical ability to diagnose and troubleshoot server issues or develop applications, but also my ability to understand the real needs of the people who use these solutions, propose clear alternatives, and implement them efficiently. I am passionate about continuous learning and bringing my experience to each new challenge.">
+            Técnico en Informática y estudiante de Licenciatura en Informática. A lo largo de más de cuatro años he ayudado a pequeñas empresas y equipos a automatizar procesos, optimizar sus sistemas y mejorar su presencia online, con soluciones prácticas que ahorran tiempo y aumentan su impacto. Lo que me diferencia no es sólo la capacidad técnica para diagnosticar un servidor o diseñar una aplicación, sino la habilidad para entender las necesidades reales de las personas que las usan, proponer alternativas claras y ejecutarlas de forma eficiente. Me encanta seguir aprendiendo y contribuir con mi experiencia en cada nuevo desafío.</p>
+        </section>
+
+        <section id="skills">
+            <h2><span class="section-num">02.</span><span data-es="Stack Técnico" data-en="Tech Stack">Stack Técnico</span></h2>
+            <div class="skills-grid">
+                <div>
+                    <h4 data-es="Lenguajes" data-en="Languages">Lenguajes</h4>
+                    <p>Python, Java, JavaScript, SQL</p>
+                </div>
+                <div>
+                    <h4 data-es="Frontend" data-en="Frontend">Frontend</h4>
+                    <p>HTML5, CSS3, React</p>
+                </div>
+                <div>
+                    <h4 data-es="Backend" data-en="Backend">Backend</h4>
+                    <p>Node.js</p>
+                </div>
+                <div>
+                    <h4 data-es="Herramientas" data-en="Tools">Herramientas</h4>
+                    <p>Git, GitHub, n8n, GraphQL</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2><span class="section-num">03.</span><span data-es="Experiencia" data-en="Experience">Experiencia</span></h2>
+
+            <article class="item">
+                <div class="item-meta"><span data-es="Freelance" data-en="Freelance">Freelance</span><br>2020 | <span data-es="Actualidad" data-en="Present">Actualidad</span></div>
+                <div class="item-content">
+                    <h3 data-es="Técnico en Informática" data-en="IT Technician">Técnico en Informática</h3>
+                    <p data-es="Desarrollé e implementé aplicaciones web y bases de datos que optimizaron procesos internos para clientes, reduciendo tiempos de gestión hasta un 30%. Automatización de procesos rutinarios para pequeñas empresas, logrando ahorros operativos y minimización de errores. Administración de redes y servidores con configuración segura y monitoreo constante. Diagnóstico y reparación de hardware y software para particulares y empresas."
+                    data-en="Developed and implemented web applications and databases that optimized internal processes for clients, reducing management time by up to 30%. Automated routine processes for small businesses, achieving operational savings and minimizing errors. Managed networks and servers with secure configurations and continuous monitoring. Diagnosed and repaired hardware and software for individuals and businesses.">
+                    Desarrollé e implementé aplicaciones web y bases de datos que optimizaron procesos internos para clientes, reduciendo tiempos de gestión hasta un 30%. Automatización de procesos rutinarios para pequeñas empresas, logrando ahorros operativos y minimización de errores. Administración de redes y servidores con configuración segura y monitoreo constante. Diagnóstico y reparación de hardware y software para particulares y empresas.</p>
+                    <ul class="tags">
+                        <li class="tag-python">Python</li>
+                        <li class="tag-sql">SQL</li>
+                        <li class="tag-node">Node.js</li>
+                        <li class="tag-git">Git / GitHub</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="item">
+                <div class="item-meta">Adán y Eva<br>2022 - 2023</div>
+                <div class="item-content">
+                    <h3 data-es="Editor de Publicidad &amp; Soporte Técnico" data-en="Advertising Editor &amp; Technical Support">Editor de Publicidad &amp; Soporte Técnico</h3>
+                    <p data-es="Diseñé contenidos gráficos y estrategias de imagen para redes sociales, aumentando la visibilidad digital de la marca en un 40%. Mantuve y optimicé los sistemas informáticos de la empresa. Brindé soporte técnico y capacitación a usuarios, reduciendo incidencias recurrentes en un 25%."
+                    data-en="Designed graphic content and branding strategies for social media, increasing the brand's digital visibility by 40%. Maintained and optimized the company's IT systems. Provided technical support and user training, reducing recurring incidents by 25%.">
+                    Diseñé contenidos gráficos y estrategias de imagen para redes sociales, aumentando la visibilidad digital de la marca en un 40%. Mantuve y optimicé los sistemas informáticos de la empresa. Brindé soporte técnico y capacitación a usuarios, reduciendo incidencias recurrentes en un 25%.</p>
+                    <ul class="tags">
+                        <li class="tag-design">Diseño Gráfico</li>
+                        <li class="tag-support">Soporte Técnico</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="item">
+                <div class="item-meta"><span data-es="Oficina" data-en="Office">Oficina</span><br>2024 - 2025</div>
+                <div class="item-content">
+                    <h3 data-es="Asistente de Oficina" data-en="Office Assistant">Asistente de Oficina</h3>
+                    <p data-es="Gestión de tareas administrativas y manejo de herramientas informáticas como Microsoft Word y Microsoft Excel. Elaboración y edición de documentos, control y organización de datos en planillas, carga y actualización de información, archivo de documentación y apoyo general en tareas de oficina."
+                    data-en="Managed administrative tasks and worked with software tools such as Microsoft Word and Microsoft Excel. Prepared and edited documents, managed and organized spreadsheet data, entered and updated information, archived documentation, and provided general office support.">
+                    Gestión de tareas administrativas y manejo de herramientas informáticas como Microsoft Word y Microsoft Excel. Elaboración y edición de documentos, control y organización de datos en planillas, carga y actualización de información, archivo de documentación y apoyo general en tareas de oficina.</p>
+                    <ul class="tags">
+                        <li class="tag-office">Microsoft Word</li>
+                        <li class="tag-office">Microsoft Excel</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="item">
+                <div class="item-meta"><span data-es="Docencia" data-en="Teaching">Docencia</span><br>2026 | <span data-es="Actualidad" data-en="Present">Actualidad</span></div>
+                <div class="item-content">
+                    <h3 data-es="Ayudante de Cátedra — Programación Orientada a Objetos" data-en="Teaching Assistant — Object-Oriented Programming">Ayudante de Cátedra — Programación Orientada a Objetos</h3>
+                    <h4>Universidad Nacional de Hurlingham (UNAHUR)</h4>
+                    <p data-es="Experiencia académica como ayudante de cátedra en la materia Programación Orientada a Objetos."
+                    data-en="Academic experience as Teaching Assistant for the Object-Oriented Programming course.">
+                    Experiencia académica como ayudante de cátedra en la materia Programación Orientada a Objetos.</p>
+                    <ul class="tags">
+                        <li class="tag-java">Java</li>
+                        <li class="tag-oop">POO</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section id="education">
+            <h2><span class="section-num">04.</span><span data-es="Educación" data-en="Education">Educación</span></h2>
+
+            <article class="item">
+                <div class="item-meta"><span data-es="2013 - 2020" data-en="2013 - 2020">2013 - 2020</span></div>
+                <div class="item-content">
+                    <h3 data-es="Técnico en Informática Personal y Profesional" data-en="Technical High School Degree — Computer Personal and Professional Technician">Técnico en Informática Personal y Profesional</h3>
+                    <h4>Escuela de Educación Secundaria Técnica N°1 Juan XXIII, Marcos Paz</h4>
+                    <p data-es="Abanderado, con un promedio de 9,5" data-en="Graduated as Flag Standard-bearer, with an academic average of 9.5/10">Abanderado, con un promedio de 9,5</p>
+                </div>
+            </article>
+
+            <article class="item">
+                <div class="item-meta"><span data-es="En curso" data-en="In progress">En curso</span></div>
+                <div class="item-content">
+                    <h3 data-es="Licenciatura en Informática — Tecnicatura en Programación" data-en="Bachelor's Degree in Computer Science — Programming Technical Degree">Licenciatura en Informática — Tecnicatura en Programación</h3>
+                    <h4>Universidad Nacional de Hurlingham (UNAHUR) (2022 - <span data-es="Actualidad" data-en="Present">Actualidad</span>)</h4>
+                    <p data-es="Promedio 8,71" data-en="Academic average of 8.7/10">Promedio 8,71</p>
+                </div>
+            </article>
+
+            <article class="item">
+                <div class="item-meta">2025</div>
+                <div class="item-content">
+                    <h3 data-es="FOBA de Batería" data-en="FOBA Drumming Program">FOBA de Batería</h3>
+                    <h4 data-es="Escuela Municipal de Música Marcos Paz — Escuela de Arte Leopoldo Marechal, La Matanza" data-en="Escuela Municipal de Música Marcos Paz — Leopoldo Marechal Art School, La Matanza">Escuela Municipal de Música Marcos Paz — Escuela de Arte Leopoldo Marechal, La Matanza</h4>
+                </div>
+            </article>
+
+            <h3 class="sub-h3" data-es="Cursos y Talleres" data-en="Courses &amp; Workshops">Cursos y Talleres</h3>
+            <ul class="list-simple">
+                <li data-es="Testing — UNAHUR (2023)" data-en="Software Testing — UNAHUR (2023)">Testing — UNAHUR (2023)</li>
+                <li data-es="Logística Empresarial — UNAHUR (2023)" data-en="Business Logistics — UNAHUR (2023)">Logística Empresarial — UNAHUR (2023)</li>
+                <li data-es="Dibujo Técnico — UNAHUR (2023)" data-en="Technical Drawing — UNAHUR (2023)">Dibujo Técnico — UNAHUR (2023)</li>
+                <li data-es="Diseño Gráfico — Polo Universitario Marcos Paz (2021)" data-en="Graphic Design — Polo Universitario Marcos Paz (2021)">Diseño Gráfico — Polo Universitario Marcos Paz (2021)</li>
+                <li data-es="Reparación y Mantenimiento de PC y Celulares — Polo Universitario Marcos Paz (2018)" data-en="PC and Mobile Phone Repair &amp; Maintenance — Polo Universitario Marcos Paz (2018)">Reparación y Mantenimiento de PC y Celulares — Polo Universitario Marcos Paz (2018)</li>
+                <li data-es="Soldador — Ministerio de Educación Pcia. Bs. As. (2024)" data-en="Welding — Ministry of Education of Buenos Aires Province (2024)">Soldador — Ministerio de Educación Pcia. Bs. As. (2024)</li>
+                <li data-es="Inglés (Beginner) — UTN (2019)" data-en="English (Beginner) — UTN (2019)">Inglés (Beginner) — UTN (2019)</li>
+                <li data-es="Oratoria — UNAHUR (2022)" data-en="Public Speaking — UNAHUR (2022)">Oratoria — UNAHUR (2022)</li>
+                <li data-es="Auxiliar de Sonidista y Producción Musical (2025)" data-en="Sound Technician and Music Production Assistant (2025)">Auxiliar de Sonidista y Producción Musical (2025)</li>
+                <li data-es="Taller n8n (2026)" data-en="n8n Workshop (2026)">Taller n8n (2026)</li>
+                <li data-es="Taller GraphQL en Spring Boot (2026)" data-en="GraphQL with Spring Boot Workshop (2026)">Taller GraphQL en Spring Boot (2026)</li>
             </ul>
         </section>
 
-        <section id="proyectos">
-            <h2>Proyectos y trabajos realizados hasta el momento como estudiante en UNAHUR</h2>
-
-            <article class="proyecto">
-                <h3>Segundo parcial de lenguaje de marcado y tecnologías web</h3>
-                <p>
-                    Página web funcional para grupo scout, álbumes de fotos.
-                </p>
-                <a href="https://github.com/santiago-elias-bravo/Segundo-parcial---lenguaje-de-marcado.git" target="_blank">
-                    Ver en GitHub
-                </a>
-            </article>
-            <article class="proyecto">
-                <h3>Ejercicios prácticos en Python</h3>
-                <p>
-                    Ejercicios prácticos realizados en el lenguaje python, a lo largo de la cursada en estructuras de datos.
-                </p>
-                <a href="https://github.com/santiago-elias-bravo/Ejercicios-pr-cticos-en-Python---UNAHUR.git" target="_blank">
-                    Ver en GitHub
-                </a>
-            </article>
-
+        <section id="contact">
+            <h2><span class="section-num">05.</span><span data-es="Contacto" data-en="Contact">Contacto</span></h2>
+            <p class="about-text" data-es="Estoy buscando mi primera experiencia laboral como desarrollador. Si tenés un proyecto interesante o una oportunidad, me encantaría conversar."
+            data-en="I'm looking for my first job opportunity as a developer. If you have an interesting project or an opportunity, I'd love to talk.">
+            Estoy buscando mi primera experiencia laboral como desarrollador. Si tenés un proyecto interesante o una oportunidad, me encantaría conversar.</p>
+            <div class="contact-buttons">
+                <a class="btn-link" href="mailto:santiagoeliasbravo@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a class="btn-link" href="tel:+541136865082"><i class="fa-solid fa-phone"></i> <span data-es="Teléfono" data-en="Phone">Teléfono</span></a>
+                <a class="btn-link" href="https://github.com/santiago-elias-bravo" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a class="btn-link" href="https://www.linkedin.com/in/santiago-elías-bravo-701808351/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <ul>
-                <li>Email: santiagoeliasbravo@gmail.com</li>
-                <li>
-                    GitHub:
-                    <a href="https://github.com/santiago-elias-bravo" target="_blank">
-                        github.com/santiago-elias-bravo
-                    </a>
-                </li>
-                <li>
-                    Linkedin
-                    <a href="https://www.linkedin.com/in/santiago-el%C3%ADas-bravo-701808351/"target="_blank">
-                     Santiago Elías Bravo
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-    </main>
+    </div>
 
     <footer>
-        <p>© CV Técnico - Bravo Santiago Elias</p>
+        <p>Santiago Elías Bravo — CV Web — 2026</p>
     </footer>
+
+    <script>
+        const LANG_KEY = 'cv-lang';
+        let lang = localStorage.getItem(LANG_KEY) || 'es';
+        const toggle = document.getElementById('langToggle');
+
+        function applyLang() {
+            document.documentElement.lang = lang;
+            document.querySelectorAll('[data-es]').forEach(el => {
+                el.textContent = el.dataset[lang];
+            });
+            toggle.textContent = lang === 'es' ? 'EN' : 'ES';
+            localStorage.setItem(LANG_KEY, lang);
+        }
+
+        toggle.addEventListener('click', () => {
+            lang = lang === 'es' ? 'en' : 'es';
+            applyLang();
+        });
+        applyLang();
+
+        document.querySelectorAll('section').forEach(s => {
+            s.classList.add('reveal');
+        });
+
+        const revealObs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    revealObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(s => revealObs.observe(s));
+
+        const bgCanvas = document.getElementById('bg-canvas');
+        const ctx = bgCanvas.getContext('2d');
+        let particles = [];
+        const P_COUNT = 90;
+
+        function resizeCanvas() {
+            bgCanvas.width = window.innerWidth;
+            bgCanvas.height = window.innerHeight;
+        }
+
+        function initParticles() {
+            particles = [];
+            for (let i = 0; i < P_COUNT; i++) {
+                particles.push({
+                    x: Math.random() * bgCanvas.width,
+                    y: Math.random() * bgCanvas.height,
+                    r: Math.random() * 2 + 0.5,
+                    baseA: Math.random() * 0.5 + 0.2,
+                    speedX: (Math.random() - 0.5) * 0.3,
+                    speedY: -Math.random() * 0.4 - 0.05,
+                    twinkle: Math.random() * Math.PI * 2
+                });
+            }
+        }
+
+        function drawParticles(now) {
+            ctx.clearRect(0, 0, bgCanvas.width, bgCanvas.height);
+            const t = now / 1000;
+            for (const p of particles) {
+                p.x += p.speedX;
+                p.y += p.speedY;
+                if (p.y < -5) { p.y = bgCanvas.height + 5; p.x = Math.random() * bgCanvas.width; }
+                if (p.x < -5) p.x = bgCanvas.width + 5;
+                if (p.x > bgCanvas.width + 5) p.x = -5;
+                const alpha = p.baseA * (0.6 + 0.4 * Math.sin(t * 1.5 + p.twinkle));
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(250, 204, 21, ' + alpha + ')';
+                ctx.fill();
+            }
+        }
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        resizeCanvas();
+        initParticles();
+        window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
+
+        if (reduceMotion) {
+            drawParticles(performance.now());
+        } else {
+            requestAnimationFrame(function loop(now) {
+                drawParticles(now);
+                requestAnimationFrame(loop);
+            });
+        }
+    </script>
+
 </body>
 </html>
