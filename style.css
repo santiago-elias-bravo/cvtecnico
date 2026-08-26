@@ -303,12 +303,6 @@ h2 {
 .tags li.tag-vite { border-color: #a78bfa; color: #a78bfa; }
 .tags li.tag-query { border-color: #ff4154; color: #ff4154; }
 .tags li.tag-router { border-color: #2dd4bf; color: #2dd4bf; }
-.tags li.tag-python { border-color: #facc15; color: #facc15; }
-.tags li.tag-java { border-color: #f89820; color: #f89820; }
-.tags li.tag-oop { border-color: #a1a1aa; color: #f4f4f5; }
-.tags li.tag-design { border-color: #f472b6; color: #f472b6; }
-.tags li.tag-support { border-color: #38bdf8; color: #38bdf8; }
-.tags li.tag-office { border-color: #a3e635; color: #a3e635; }
 
 /* Botones */
 .btn-link {
